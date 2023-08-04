@@ -65,9 +65,9 @@ void CommandAnalyzer(void)
 				}
 				else
 				{
-					pvpd++;
+					pved++;
 				}
-				pvpg++;
+				pveg++;
 				std::cout << "Games vs computer played: " << pveg << "\nPlayer won: " << p << "\nComputer won: " << comp << "\nDraws:" << pved << "\n\n";
 				std::cout << "Welcome to Tic Tac Toe game\nType 'start' to start a new game\nType 'quit' to shutdown\n";
 			}
@@ -154,7 +154,7 @@ int gamepve(void)
 			std::cout << "Turn " << c << "\nComputer's turn:\n";
 			if (aimove(grid) == -1)
 			{
-				while (i < 1 || i > 9 || grid[i - 1] != 0)
+				while (i < 1 || i > 9 || grid[i] != 0)
 				{
 					i = (rand() % 9);
 				}
